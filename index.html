@@ -11,8 +11,8 @@
     <div class="main-card">
         <h1>Meu Site Oficial 🚀</h1>
         <p>Este site foi construído juntando blocos de códigos simples e organizados no GitHub Pages.</p>
-        <button onclick="alert('Funciona perfeitamente!')">Clique Aqui</button>
-        <button class="dark-mode-btn" onclick="toggleDarkMode()">Mudar Tema 🌓</button>
+        <button id="btn-alerta">Clique Aqui</button>
+        <button id="btn-tema" class="dark-mode-btn">Mudar Tema 🌓</button>
     </div>
 
     <div class="cards-section">
@@ -38,11 +38,6 @@
         </div>
     </div>
 
-    <script>
-        function toggleDarkMode() {
-            document.body.classList.toggle('dark');
-        }
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
