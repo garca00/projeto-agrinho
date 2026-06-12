@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background 0.3s, color 0.3s;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+/* Card Principal */
+.main-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #4f46e5;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Botões */
+button {
+    background-color: #4f46e5;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #4338ca;
+}
+
+.dark-mode-btn {
+    background-color: #334155;
+}
+
+.dark-mode-btn:hover {
+    background-color: #1e293b;
+}
+
+/* Seção de Cards Extra */
+.cards-section {
+    display: flex;
+    gap: 20px;
+    max-width: 900px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    flex: 1;
+    min-width: 250px;
+}
+
+.card h3 {
+    color: #4f46e5;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Rodapé */
+.footer-container {
+    text-align: center;
+    font-size: 14px;
+    margin-top: auto;
+}
+
+.social-links {
+    margin-top: 8px;
+}
+
+.social-links a {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para o Modo Escuro */
+body.dark {
+    background-color: #0f172a;
+    color: #f8fafc;
+}
+
+body.dark .main-card, 
+body.dark .card {
+    background-color: #1e293b;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+body.dark p,
+body.dark .card p {
+    color: #cbd5e1;
+}
+
+body.dark h1,
+body.dark .card h3,
+body.dark .social-links a {
+    color: #818cf8;
+}
