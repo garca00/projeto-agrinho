@@ -12,5 +12,4 @@ document.addEventListener("DOMContentLoaded", function() {
     botaoTema.addEventListener("click", function() {
         document.body.classList.toggle("dark");
     });
-
 });
